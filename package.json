@@ -1,0 +1,62 @@
+{
+  "name": "ludum-pro-bono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ --platform=win32 --arch=x64 --electron-version=4.1.4",
+    "pack": "build --dir",
+    "pack-linux": "build --platform=linux",
+    "dist": "build",
+    "dist-linux": "build --linux"
+  },
+  "author": {
+    "name": "Silveira_L",
+    "email": "ludum.pro.bono@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/SilveiraL/LUDUM-PRO-BONO"
+  },
+  "license": "ISC",
+  "build": {
+    "appId": "com.silveira_l.ludum_pro_bono",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/img/icon.ico"
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "assets/img/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "electron-builder": "^20.40.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "firebase": "^6.2.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "request": "^2.88.0"
+  }
+}

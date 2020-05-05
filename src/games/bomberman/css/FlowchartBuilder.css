@@ -1,0 +1,8 @@
+.flowchart-builder {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+}

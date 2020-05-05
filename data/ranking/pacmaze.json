@@ -1,0 +1,26 @@
+[
+    {
+        "colocacao": 1,
+        "id": 201711111,
+        "nome": "Pessoa 1",
+        "pontuacao": 1000
+    },
+    {
+        "colocacao": 2,
+        "id": 201711112,
+        "nome": "Pessoa 2",
+        "pontuacao": 1000
+    },
+    {
+        "colocacao": 3,
+        "id": 201711113,
+        "nome": "Pessoa 3",
+        "pontuacao": 1000
+    },
+    {
+        "colocacao": 4,
+        "id": 201711114,
+        "nome": "Pessoa 4",
+        "pontuacao": 1000
+    }
+]

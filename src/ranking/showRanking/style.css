@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+.ranking {
+    color: white;
+    background-color: #222;
+}
+
+.ranking .row img {
+    height: 30px;
+}
+
+.ranking .player {
+    border-radius: 5px;
+    border: solid 2px #20c997;
+}
+
+.ranking .player.select {
+    background-color: #20c997;
+    cursor: pointer;
+}
+
+.ranking .game {
+    color: #a473ff;
+}

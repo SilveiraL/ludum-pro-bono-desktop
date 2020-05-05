@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#simon {
+    transform: rotate(45deg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'azul amarelo'
+        'vermelho verde';
+}
+
+#simon > div {
+    width: 40vh;
+    height: 40vh;
+    margin: 10px;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+#simon > div:hover {
+    cursor: pointer;
+}
+
+#green {
+    background-color: #0f0;
+    grid-area: verde;
+}
+
+#blue {
+    background-color: #00f;
+    grid-area: azul;
+}
+
+#yellow {
+    background-color: #ff0;
+    grid-area: amarelo;
+}
+
+#red {
+    background-color: #f00;
+    grid-area: vermelho;
+}
+
+#circuloDentro {
+    background-color: #444;
+    position: absolute;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 100%;
+}
+
+#circuloFora {
+    background-color: transparent;
+    position: absolute;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 100%;
+    border: solid 100vh #444;
+}
+
+#gameOver {
+    display: none;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 1;
+}
+
+#gameOver > h1 {
+    font-size: 8em;
+    text-shadow: 0 0 50px violet;
+}
+
+#gameOver > p {
+    font-size: 2em;
+    text-shadow: 0 0 20px violet;
+}
+
+#gameOver > button {
+    font-size: 3em;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: violet;
+    border-radius: 100px;
+    padding: 5px 40px;
+    margin-top: 20px;
+}
+
+#gameOver > button:hover {
+    cursor: pointer;
+    color: violet;
+    background-color: white;
+}

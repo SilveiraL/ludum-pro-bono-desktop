@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking</title>
+    <link rel="stylesheet" href="../../lib/css/global.css">
+    <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="h-100 d-flex flex-row align-items-center">
+        <div id="ranking" class="container ranking bg-dark rounded p-1 h-auto">
+            <div class="row align-items-center">
+                <div class="col-12 text-center title h1 text-white">
+                    RANKING LUDUM PRO BONO
+                </div>
+                <div id="nomeJogo" class="col-12 text-center h1 game"></div>
+            </div>
+            <div class="row p-1 m-1 text-warning">
+                <div class="col-2">Colocação</div>
+                <div class="col-3">Matrícula</div>
+                <div class="col-5">Nome</div>
+                <div class="col-2">Pontuação</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../lib/firebase/firebase.js"></script>
+    <script src="../../lib/firebase/firebase-database.js"></script>
+    <script src="../../lib/firebase/firebase-config.js"></script>
+    <script src="ranking.js"></script>
+</body>
+
+</html>

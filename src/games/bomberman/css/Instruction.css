@@ -1,0 +1,21 @@
+.instruction {
+    z-index: 10;
+    background-color: rgb(11, 124, 158);
+    color: white;
+    padding: 10px;
+    border: solid 2px white;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.instruction.preselected {
+    background-color: rgba(183, 0, 255, 0.61);
+}
+
+.instruction.selected {
+    background-color: rgba(255, 0, 0, 0.514);
+}

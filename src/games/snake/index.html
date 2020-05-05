@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake</title>
+    <link rel="stylesheet" href="../../lib/css/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div snake="snake1">
+            <div class="snake">Snake</div>
+            <div class="pontos">Soma: 0</div>
+        </div>
+        <div id="legenda">
+            <div n=2 style="background-color: #f00">X</div>
+            <div n=2 style="background-color: #0f0">1</div>
+            <div n=4 style="background-color: rgb(0, 204, 255)">2</div>
+            <div n=2 style="background-color: rgb(162, 0, 255)">5</div>
+            <div n=4 style="background-color: rgb(255, 0, 140)">10</div>
+            <div n=2 style="background-color: #ff0">20</div>
+            <div n=2 style="background-color: rgb(202, 131, 23)">50</div>
+            <div n=1 style="background-color: #fff">100</div>
+        </div>
+        <div id="desafio">4 x 4 = ?</div>
+        <div id="timer">0</div>
+    </header>
+    <div id="gameOver">Game Over
+        <div id="pontos">Pontuação: 0</div>
+        <button>Reiniciar</button>
+    </div>
+    <div id="window"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

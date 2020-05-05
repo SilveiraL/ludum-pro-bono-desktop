@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking</title>
+    <style>
+        #ranking {
+            color: white;
+            background-color: #222;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        #ranking>table {
+            width: 100%;
+            padding: 10px;
+        }
+
+        #ranking>.center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            background-color: blue;
+        }
+
+        #ranking td,
+        #ranking td u {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #ramking td {
+            background-color: blueviolet;
+        }
+
+        #ranking tfoot td {
+            padding-top: 20px;
+        }
+
+        #ranking td u {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #ranking>table>thead {
+            color: #ffc107;
+        }
+
+        #ranking img {
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ranking" class="bordaRedonda">
+        <span class="center">RANKING</span>
+        <table>
+            <thead>
+                <tr>
+                    <td>Colocação</td>
+                    <td>Nome</td>
+                </tr>
+            </thead>
+            <tbody id="ranking-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Pressione <u>A</u> para ver o ranking completo</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

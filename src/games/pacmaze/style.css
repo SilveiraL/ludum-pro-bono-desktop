@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #222;
+}
+
+#root {
+    background-color: #000;
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    left: 15px;
+    bottom: 15px;
+}
+
+.pacman {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+.pacman > img {
+    width: 30px;
+    height: 30px;
+}
+
+[porta] {
+    background-color: #5f5;
+}
+
+[porta=vertical] {
+    width: 15px;
+    height: 30px;
+}
+
+[porta=horizontal] {
+    width: 30px;
+    height: 15px;
+}
+
+.food {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+
+.food > div {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+    border-radius: 100px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px white;
+}
+
+.portal {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+}
+
+.portal > img {
+    position: relative;
+    left: -5px;
+    bottom: 5px;
+    height: 40px;
+    width: 40px;
+}

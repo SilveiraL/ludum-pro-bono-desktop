@@ -1,0 +1,25 @@
+:root {
+    --bloco-size-borda: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+#root {
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    overflow: hidden;
+}
+
+.grama {
+    background-color: rgb(0, 156, 0);
+}

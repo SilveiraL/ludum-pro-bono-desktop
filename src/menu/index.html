@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LUDUM PRO BONO</title>
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Monoton|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <audio id="musicaAbertura" src="../../assets/audios/7th Element.mp3"></audio>
+    <header>
+        <img src="../../assets/img/logo-lumac.png" alt="">
+        <span>LUDUM PRO BONO</span>
+    </header>
+    <main>
+        <div id="fundo">
+            <img src="../../assets/img/background.jpeg">
+        </div>
+        <div id="games"></div>
+        <div id="info">
+            <img src="../../assets/img/invisivel.png" class="bordaRedonda">
+            <div class="bordaRedonda">
+                <div class="m-10">
+                    <span id="tituloDescricao"></span><br>
+                    <p id="descricao"></p><br>
+                    <span>Controles</span><br>
+                    <p id="controles"></p>
+                </div>
+            </div>
+            <div id="ranking" class="bordaRedonda">Ranking</div>
+        </div>
+    </main>
+
+    <script src="../lib/firebase/firebase.js"></script>
+    <script src="../lib/firebase/firebase-database.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

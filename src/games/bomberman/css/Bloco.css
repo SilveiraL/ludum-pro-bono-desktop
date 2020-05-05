@@ -1,0 +1,10 @@
+.bloco {
+    z-index: 1;
+}
+
+.bloco-1 {
+    background-color: rgb(188, 188, 188);
+    border: solid var(--bloco-size-borda) rgb(220, 220, 220);
+    border-bottom: solid var(--bloco-size-borda) #000;
+    border-right: solid var(--bloco-size-borda) rgb(103, 94, 103);
+}

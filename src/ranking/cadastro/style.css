@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fundo {
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    position: absolute;
+}
+
+#qrcodecontainer {
+    border: solid 10px black;
+    display: none;
+}
+
+#qrcode {
+    height: 50vh;
+}

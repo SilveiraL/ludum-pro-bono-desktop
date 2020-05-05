@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('../../assets/fonts/PressStart2P.ttf');
+}
+
+@font-face {
+    font-family: 'Carter One';
+    src: url('../../assets/fonts/CarterOne.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Carter One', cursive;
+    cursor: none;
+}
+
+body {
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-bottom: solid 2px deepskyblue;
+    height: 75px;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 75px;
+    height: 75px;
+}
+
+header span {
+    position: absolute;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    color: deepskyblue;
+    width: 100%;
+
+    animation-name: txtRGB;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 75px);
+    overflow: hidden;
+}
+
+main > div img {
+    width: 200px;
+    height: 200px;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    background-color: #44444444;
+    width: 100%;
+    height: calc(100vh - 400px);
+    bottom: 0;
+    position: absolute;
+}
+
+#info > img {
+    height: calc(100vh - 425px);
+    width: calc(100vh - 425px);
+    border: solid 2px black;
+    margin-left: 10px;
+}
+
+#info > div {
+    background-color: #44444444;
+    margin: 10px;
+    width: 100%;
+    height: calc(100vh - 420px);
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+#info p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fundo {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: -1;
+}
+
+#fundo > img {
+    height: 100%;
+    width: 100%;
+}
+
+#games {
+    display: flex;
+    align-items: center;
+    height: 325px;
+    justify-content: space-between;
+}
+
+.bordaRedonda {
+    border-radius: 10px;
+}
+
+.game {
+    display: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    width: 200px;
+    height: min-content;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    position: absolute;
+    top: calc(88px);
+    left: calc(100vw + 50px);
+}
+
+.selecionado {
+    animation-name: bordaRGB;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform: scale(1.125);
+}
+
+.subselecionado {
+}
+
+.nome {
+    font-size: 1.25em;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+/* Cores baseadas na Roda RYB */
+@keyframes txtRGB {
+    0% {color:#FE2712;}
+    8.3% {color:#FC600A;}
+    16.6% {color:#FB9902;}
+    24.9% {color:#FCCC1A;}
+    33.2% {color:#FEFE33;}
+    41.5% {color:#B2D732;}
+    49.8% {color:#66B032;}
+    58.1% {color:#347C98;}
+    66.4% {color:#0247FE;}
+    74.7% {color:#4424D6;}
+    83% {color:#8601AF;}
+    91.3% {color:#C21460;}
+    100% {color:#FE2712;}
+}
+
+@keyframes bordaRGB {
+    0% {box-shadow: 0 0 50px #FE2712;}
+    8.3% {box-shadow: 0 0 50px #FC600A;}
+    16.6% {box-shadow: 0 0 50px #FB9902;}
+    24.9% {box-shadow: 0 0 50px #FCCC1A;}
+    33.2% {box-shadow: 0 0 50px #FEFE33;}
+    41.5% {box-shadow: 0 0 50px #B2D732;}
+    49.8% {box-shadow: 0 0 50px #66B032;}
+    58.1% {box-shadow: 0 0 50px #347C98;}
+    66.4% {box-shadow: 0 0 50px #0247FE;}
+    74.7% {box-shadow: 0 0 50px #4424D6;}
+    83% {box-shadow: 0 0 50px #8601AF;}
+    91.3% {box-shadow: 0 0 50px #C21460;}
+    100% {box-shadow: 0 0 50px #FE2712;}
+}
+
+@keyframes backgroundRGB {
+    0% {background-color: #FE2712;}
+    8.3% {background-color: #FC600A;}
+    16.6% {background-color: #FB9902;}
+    24.9% {background-color: #FCCC1A;}
+    33.2% {background-color: #FEFE33;}
+    41.5% {background-color: #B2D732;}
+    49.8% {background-color: #66B032;}
+    58.1% {background-color: #347C98;}
+    66.4% {background-color: #0247FE;}
+    74.7% {background-color: #4424D6;}
+    83% {background-color: #8601AF;}
+    91.3% {background-color: #C21460;}
+    100% {background-color: #FE2712;}
+}

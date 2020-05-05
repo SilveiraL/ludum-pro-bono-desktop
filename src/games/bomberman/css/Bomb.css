@@ -1,0 +1,34 @@
+.bomb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bomb img {
+    height: 100%;
+}
+
+.explosion {
+    position: absolute;
+}
+
+.explosion.right {
+    transform: rotate(90deg);
+}
+
+.explosion.down {
+    transform: rotate(180deg);
+}
+
+.explosion.left {
+    transform: rotate(-90deg);
+}
+
+.explosion.x {
+    transform: rotate(90deg);
+}
+
+.explosion img {
+    height: 100%;
+    width: 100%;
+}
