@@ -16,7 +16,7 @@ class Bomberman extends Objeto {
         this.img = document.createElement('img')
         this.img.style.width = '100%'
         this.img.style.height = '100%'
-        this.img.src = './assets/sprites/down/1.png'
+        this.img.src = './assets/sprites/bomberman/down/1.png'
         this.dom.append(this.img)
         this.dom.style.zIndex = 1
 
@@ -128,7 +128,7 @@ class Bomberman extends Objeto {
     }
 
     updateSprites(n = 1) {
-        this.img.src = `./assets/sprites/${this.direcao}/${n}.png`
+        this.img.src = `./assets/sprites/bomberman/${this.direcao}/${n}.png`
     }
 
     animar() {
