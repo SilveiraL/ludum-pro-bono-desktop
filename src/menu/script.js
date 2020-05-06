@@ -186,7 +186,7 @@ function addPlayer(colocacao, nome) {
 }
 
 function atualizarRanking() {
-    $('#ranking').load(path.join(__dirname, '/../ranking/showRanking/ajaxRanking.html')).ready(() => {
+    $('#ranking').load(path.join(__dirname, '/../ranking/show_ranking/ajax_ranking.html')).ready(() => {
         request.get(ludum.serverAddress + '/ranking/' + games[gameSelecionado].nome, (e, res, body) => {
             console.log(body)
             JSON.parse(body).forEach((player, indice) => {
@@ -221,7 +221,7 @@ document.addEventListener('keydown', e => { // Alguma tecla pressionada
         case keys.action1:
             localStorage.setItem("ranking",
                 JSON.stringify({ context: window.location.href, nomeJogo: games[gameSelecionado].nome }));
-            window.location.href = '../ranking/showRanking/index.html';
+            window.location.href = '../ranking/show_ranking/index.html';
             break;
 
         case keys.menu:
@@ -261,7 +261,7 @@ new Game({
 new Game({
     nome: 'Flappy Becker',
     linkImagem: '../../assets/img/games/cards/flappy-becker.png',
-    linkIndex: '../games/flappy-becker/index.html',
+    linkIndex: '../games/flappy_becker/index.html',
     linkGif: '../../assets/img/games/gifs/flappy-becker.gif',
     tituloDescricao: 'Flappy Becker - Química',
     descricao: 'O jogo Flappy Becker tem como objetivo auxiliar o jogador a identificar as principais moléculas através da sua nomenclatura, assim desenvolvendo um raciocínio rápido e reflexos devido a sua jogabilidade.',
@@ -269,19 +269,9 @@ new Game({
 });
 
 new Game({
-    nome: 'Estados Brasileiros',
-    linkImagem: '../../assets/img/games/cards/estados-brasileiros.png',
-    linkIndex: '../games/estados-brasileiros/index.html',
-    linkGif: '../../assets/img/games/gifs/estados-brasileiros.gif',
-    tituloDescricao: 'Estados Brasileiros - Geografia',
-    descricao: 'O jogo Estados Brasileiros tem como objetivo auxiliar o jogador a aprender os principais estados através da jogabilidade de perguntas e respostas com um período de tempo a ser respondido, assim desenvolvendo habilidades como memória, raciocínio, reflexo e relacionar a forma dos estados com seus respectivos nomes.',
-    controles: '{A, B, C, D}: Corresponde às respectivas respostas.'
-});
-
-new Game({
     nome: 'Simon',
     linkImagem: '../../assets/img/games/cards/simon-memory.png',
-    linkIndex: '../games/simon-memory/index.html',
+    linkIndex: '../games/simon/index.html',
     linkGif: '../../assets/img/games/gifs/simon.gif',
     tituloDescricao: 'Simon - Memória',
     descricao: 'O jogo Simon tem como objetivo desenvolver a memória do jogador desafiando o mesmo decorar o maior número de sequencias possíveis sem errar.',
@@ -299,9 +289,9 @@ new Game({
 });
 
 new Game({
-    nome: 'Bomberman',
+    nome: 'Bomberdev',
     linkImagem: '../../assets/img/games/cards/bomberman.png',
-    linkIndex: '../games/bomberman/index.html',
+    linkIndex: '../games/bomberdev/index.html',
     linkGif: '../../assets/img/games/cards/what.png',
     tituloDescricao: 'Bomberman - Raciocínio lógico',
     descricao: 'Em breve...',
