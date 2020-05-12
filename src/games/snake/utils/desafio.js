@@ -11,7 +11,7 @@ const desafio = {
     resposta: null,
     dificuldade: 1,
     operacoes: [todasOperacoes[0]],
-    dificuldadeAcrescimoOperacao: 1,
+    dificuldadeAcrescimoOperacao: 5,
 
     acrescentarOperacao() {
         if (this.operacoes.length < todasOperacoes.length) {
