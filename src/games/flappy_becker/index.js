@@ -1,5 +1,5 @@
-const Game = require('../../lib/Game')
-const ludum = require('../../lib/ludum_pro_bono')
+const Game = require('../../utils/Game')
+const ludum = require('../../utils/ludum_pro_bono')
 
 const keys = ludum.keys
 ludum.addEscListenerBackToMenu()
