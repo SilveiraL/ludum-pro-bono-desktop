@@ -249,7 +249,7 @@ var tempoParado = tempoLimite;
 var permitirSelecao = false;
 
 new Game({
-    nome: 'Snake calculator',
+    nome: 'Snake math',
     linkImagem: '../../assets/img/games/cards/snake.png',
     linkIndex: '../games/snake/index.html',
     linkGif: '../../assets/img/games/gifs/snake.gif',
