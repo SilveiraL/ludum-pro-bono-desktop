@@ -1,4 +1,4 @@
-const Objeto = require('../../../../lib/GameObject')
+const Objeto = require('../../../../utils/GameObject')
 const Scene = require('./Scene')
 
 class Bomb extends Objeto {

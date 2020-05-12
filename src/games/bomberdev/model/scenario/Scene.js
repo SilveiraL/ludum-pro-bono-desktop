@@ -1,5 +1,5 @@
-const Objeto = require('../../../../lib/GameObject')
-const Game = require('../../../../lib/Game')
+const Objeto = require('../../../../utils/GameObject')
+const Game = require('../../../../utils/Game')
 
 class Scene {
     constructor(game = new Game()) {

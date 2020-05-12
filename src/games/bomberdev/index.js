@@ -1,5 +1,5 @@
-const ludum = require('../../lib/ludum_pro_bono')
-const Game = require('../../lib/Game')
+const ludum = require('../../utils/ludum_pro_bono')
+const Game = require('../../utils/Game')
 
 const { tiposBloco, Bloco, BlocoInquebravel, BlocoQuebravel } = require('./model/scenario/Bloco')
 const Bomberman = require('./model/scenario/Bomberman')

@@ -1,6 +1,6 @@
 const Flowchart = require('./Flowchart')
 const Instruction = require('./Instruction')
-const ludum = require('../../../../lib/ludum_pro_bono')
+const ludum = require('../../../../utils/ludum_pro_bono')
 
 const keys = ludum.keys
 
