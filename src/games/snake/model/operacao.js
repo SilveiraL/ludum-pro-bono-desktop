@@ -56,8 +56,8 @@ class Subtracao extends Operacao {
 class Multiplicacao extends Operacao {
     gerarExpressao() {
         do {
-            var n1 = Math.ceil(Math.random() * this.dificuldade * 3)
-            var n2 = Math.ceil(Math.random() * this.dificuldade * 3)
+            var n1 = Math.ceil(Math.random() * this.dificuldade)
+            var n2 = Math.ceil(Math.random() * this.dificuldade)
         } while (n1 == 0 || n2 == 0)
         this.a = n1
         this.b = n2

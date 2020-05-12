@@ -16,7 +16,6 @@ const desafio = {
     acrescentarOperacao() {
         if (this.operacoes.length < todasOperacoes.length) {
             this.operacoes.push(todasOperacoes[this.operacoes.length])
-            this.dificuldade = 1
         }
     },
 

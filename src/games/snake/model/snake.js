@@ -46,9 +46,9 @@ class Snake {
         food.sortearLugar();
 
         if (this.pontos == desafio.resposta) {
-            addTempo(100);
+            addTempo(20);
             this.setPontos(0);
-            this.addBody(((desafio.dificuldade - 5) / 5));
+            this.addBody(Math.ceil(desafio.dificuldade / 3));
             desafio.gerarDesafio();
         }
     }

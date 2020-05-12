@@ -165,7 +165,7 @@ const foods = [];
 
 createFoods();
 desafio.gerarDesafio();
-setTempo(250);
+setTempo(60);
 
 function loop() {
     snakes.forEach(snake => {
@@ -180,7 +180,7 @@ function loop() {
 
     contador++;
 
-    if (contador >= 4 && snakes[0].iniciouMovimento) {
+    if (contador >= 8 && snakes[0].iniciouMovimento) {
         contador = 0
         addTempo(-1);
     }
@@ -188,4 +188,4 @@ function loop() {
     if (getTempo() == 0) gameOver();
 }
 
-game.loopFrame(loop, 7);
+game.loop(loop, 125);
