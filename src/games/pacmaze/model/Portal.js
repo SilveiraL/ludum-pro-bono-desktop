@@ -1,4 +1,4 @@
-const Objeto = require('../../../lib/GameObject')
+const Objeto = require('../../../utils/GameObject')
 
 class Portal extends Objeto {
     constructor(cor = 'blue', size = 30) {

@@ -1,14 +1,14 @@
 const fs = require('fs');
-const ludum = require('../../lib/ludum_pro_bono')
-const Objeto = require('../../lib/GameObject')
-const Game = require('../../lib/Game')
+const ludum = require('../../utils/ludum_pro_bono')
+const Objeto = require('../../utils/GameObject')
+const Game = require('../../utils/Game')
 
-const Bloco = require('./js/Bloco')
-const Food = require('./js/Food')
-const Ghost = require('./js/Ghost')
-const Pacman = require('./js/Pacman')
-const Porta = require('./js/Porta')
-const Portal = require('./js/Portal')
+const Bloco = require('./model/Bloco')
+const Food = require('./model/Food')
+const Ghost = require('./model/Ghost')
+const Pacman = require('./model/Pacman')
+const Porta = require('./model/Porta')
+const Portal = require('./model/Portal')
 
 const keys = ludum.keys
 ludum.addEscListenerBackToMenu()

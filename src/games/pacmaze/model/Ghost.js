@@ -1,4 +1,4 @@
-const Objeto = require('../../../lib/GameObject')
+const Objeto = require('../../../utils/GameObject')
 
 class Ghost extends Objeto {
     constructor(cor = 'amarelo', circuito = [], velocidade = 30) {
