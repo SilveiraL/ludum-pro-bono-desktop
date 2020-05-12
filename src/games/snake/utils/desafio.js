@@ -16,7 +16,7 @@ const desafio = {
     acrescentarOperacao() {
         if (this.operacoes.length < todasOperacoes.length) {
             this.operacoes.push(todasOperacoes[this.operacoes.length])
-            this.dificuldade = 0
+            this.dificuldade = 1
         }
     },
 
@@ -25,16 +25,15 @@ const desafio = {
     },
 
     gerarDesafio() {
-        const randomIndex = Math.floor(Math.random() * this.operacoes.length)
-        console.log(randomIndex)
-        const Operacao = this.operacoes[randomIndex]
+        console.log(this.operacoes.length)
+        const Operacao = this.operacoes[Math.floor(Math.random() * this.operacoes.length)]
         const operacao = new Operacao(this.dificuldade)
         this.setDesafio(`${operacao.toString()} = ?`)
         this.resposta = operacao.calcular()
+        this.dificuldade += 1
         if (this.dificuldade > this.dificuldadeAcrescimoOperacao) {
             this.acrescentarOperacao()
         }
-        this.dificuldade += 1
     }
 }
 
