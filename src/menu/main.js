@@ -1,7 +1,7 @@
 const $ = require('jquery')
 const request = require('request')
 const path = require('path')
-const ludum = require('../lib/ludum_pro_bono')
+const ludum = require('../utils/ludum_pro_bono')
 
 const keys = ludum.keys
 
