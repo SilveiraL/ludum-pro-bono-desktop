@@ -36,8 +36,10 @@ class Soma extends Operacao {
 
 class Subtracao extends Operacao {
     gerarExpressao() {
-        const n1 = Math.ceil(Math.random() * this.dificuldade * 5)
-        const n2 = Math.ceil(Math.random() * this.dificuldade * 5)
+        do {
+            var n1 = Math.ceil(Math.random() * this.dificuldade * 5)
+            var n2 = Math.ceil(Math.random() * this.dificuldade * 5)
+        } while (n1 == n2)
         this.a = Math.max(n1, n2)
         this.b = Math.min(n1, n2)
     }
@@ -52,6 +54,15 @@ class Subtracao extends Operacao {
 }
 
 class Multiplicacao extends Operacao {
+    gerarExpressao() {
+        do {
+            var n1 = Math.ceil(Math.random() * this.dificuldade * 3)
+            var n2 = Math.ceil(Math.random() * this.dificuldade * 3)
+        } while (n1 == 0 || n2 == 0)
+        this.a = n1
+        this.b = n2
+    }
+
     toString() {
         return `${this.a} x ${this.b}`
     }
@@ -62,6 +73,15 @@ class Multiplicacao extends Operacao {
 }
 
 class Divisao extends Operacao {
+    gerarExpressao() {
+        do {
+            var n1 = Math.ceil(Math.random() * this.dificuldade * 2)
+            var n2 = Math.ceil(Math.random() * this.dificuldade * 2)
+        } while (n1 == 0 || n2 == 0)
+        this.a = n1 * n2
+        this.b = n2
+    }
+
     toString() {
         return `${this.a} / ${this.b}`
     }
