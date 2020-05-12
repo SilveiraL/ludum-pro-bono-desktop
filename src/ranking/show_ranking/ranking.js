@@ -1,4 +1,4 @@
-const ludum = require('../../lib/ludum_pro_bono')
+const ludum = require('../../utils/ludum_pro_bono')
 const $ = require('jquery')
 const fs = require('fs')
 const path = require('path')
